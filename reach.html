@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Us</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  /><!-- Link to your CSS file -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #89b9e8;
+            background: url("images/aboutback.png") no-repeat center center fixed;
+            padding: 20px;
+        }
+
+        /* Container Styling */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 30px;
+            background: #404674;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Title */
+        h2 {
+            text-align: center;
+            color: #74bff1;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        /* Founder Section */
+        .founder-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .founder-section img {
+            width: 600px;
+            height: 600px;
+            border-radius: 6%;
+            margin-right: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .founder-section img:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: black;
+        
+        }
+        .founder-section .founder-details {
+            flex-grow: 1;
+        }
+        .founder-section .founder-details h3 {
+            font-size: 24px;
+            color: #dd4e4e;
+            margin-bottom: 10px;
+        }
+        .founder-section .founder-details p {
+            font-size: 18px;
+            color: #e8acac;
+        }
+
+        /* Company Details Section */
+        .company-details {
+            margin-bottom: 40px;
+        }
+        .company-details p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Form Styling */
+        form {
+            background: #7e9cca;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);
+        }
+        form .form-group {
+            margin-bottom: 20px;
+        }
+        form label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            color: #c13232;
+            background-color: #fff;
+            box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        /* Submit Button */
+        form .submit-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 50px;
+            box-shadow: 0px 6px 12px rgba(52, 152, 219, 0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        form .submit-btn:hover {
+            background-color: #2980b9;
+            box-shadow: 0px 8px 16px rgba(52, 152, 219, 0.7);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .founder-section img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Reach Us</h2>
+
+        <!-- Founder Section -->
+        <div class="founder-section">
+            <img src="images/owner.jpg" alt="Founder and Owner">
+            <div class="founder-details">
+                <h3>Sanjay - Founder & Owner</h3>
+                <p>sanjay has over 5 years of experience in organizing high-end events, ensuring every occasion is memorable. His vision and leadership have led the company to become a leading name in the event industry.</p>
+            </div>
+        </div>
+
+        <!-- Company Details Section -->
+        <div class="company-details">
+            <h3>Company Details</h3>
+            <p><strong>Company Name:</strong> S2 Event Planners Pvt. Ltd.</p>
+            <p><strong>Address:</strong> 123 Event Street, Mettu kuppam, Maduravoyal, Chennai-600095</p>
+            <p><strong>Email:</strong> S2eventplanners@gmail.com</p>
+            <p><strong>Phone:</strong> +91-8428612988</p>
+            <p><strong>Website:</strong> www.s2eventplanners.com</p>
+            <h3>follow us</h3>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href="#"> <i class="fab fa-linkedin-in"></i> Linkedin </a>
+              </div>
+            
+            <p>We specialize in creating bespoke events for weddings, business conferences, birthdays, and other celebrations. With our dedicated team and high standards, we ensure your event is handled with the utmost professionalism.</p>
+        </div>
+
+        <!-- Quote Form -->
+        <form action="submit_quote.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Quote Request</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Details</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Title */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3498db;
+            font-size: 32px;
+        }
+
+        /* Event Section */
+        .event-section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fafafa;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .event-section:hover {
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .event-section h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .amount {
+            font-size: 24px;
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+
+        /* Budget Breakdown */
+        .budget-breakdown {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .budget-breakdown ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .budget-breakdown li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .budget-breakdown li:last-child {
+            border-bottom: none;
+        }
+        .budget-breakdown .item {
+            color: #34495e;
+        }
+        .budget-breakdown .cost {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Decision-Making Section */
+        .decision-section {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #e9f7ef;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .decision-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .decision-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .decision-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .decision-box p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .amount {
+                font-size: 20px;
+            }
+            .event-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quotation Details</h1>
+
+        <!-- Birthday Event Section -->
+        <a href="birthday.html" class="event-button">
+        <div class="event-section">
+            <h2>Birthday Event</h2>
+            <p class="amount">Total Budget: ₹12,000</p>
+            <div class="budget-breakdown">
+                <p><strong>Budget Breakdown:</strong></p>
+                <ul>
+                    <li><span class="item">Full Services</span><span class="cost">₹3,000</span></li>
+                    <li><span class="item">Decorations</span><span class="cost">₹4,000</span></li>
+                    <li><span class="item">Music and Photos</span><span class="cost">₹2,000</span></li>
+                    <li><span class="item">Food and Drinks</span><span class="cost">₹2,500</span></li>
+                    <li><span class="item">Invitation Card</span><span class="cost">₹500</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Marriage Event Section -->
+        <a href="marriage.html" class="event-button">
+        <div class="event-section">
+            <h2>Marriage Event</h2>
+            <p class="amount">Total Budget: ₹123,870</p>
+            <div class="budget-breakdown">
+                <p><strong>Budget Breakdown:</strong></p>
+                <ul>
+                    <li><span class="item">Full Wedding Planning</span><span class="cost">₹30,000</span></li>
+                    <li><span class="item">Venue Selection</span><span class="cost">₹40,000</span></li>
+                    <li><span class="item">Catering Services</span><span class="cost">₹30,000</span></li>
+                    <li><span class="item">Decoration & Floral Arrangements</span><span class="cost">₹15,000</span></li>
+                    <li><span class="item">Photography & Videography</span><span class="cost">₹8,000</span></li>
+                    <li><span class="item">Invitations & RSVP Management</span><span class="cost">₹5,000</span></li>
+                    <li><span class="item">Entertainment</span><span class="cost">₹5,870</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Luxury Marriage Event Section -->
+        <a href="luxuary.html" class="event-button">
+        <div class="event-section">
+            <h2>Luxury Marriage Event</h2>
+            <p class="amount">Total Budget: ₹155,500</p>
+            <div class="budget-breakdown">
+                <p><strong>Budget Breakdown:</strong></p>
+                <ul>
+                    <li><span class="item">Customized Event Planning</span><span class="cost">₹40,000</span></li>
+                    <li><span class="item">Luxury Venue</span><span class="cost">₹60,000</span></li>
+                    <li><span class="item">High-End Catering</span><span class="cost">₹30,000</span></li>
+                    <li><span class="item">Exclusive Decor</span><span class="cost">₹15,000</span></li>
+                    <li><span class="item">Live Entertainment</span><span class="cost">₹5,000</span></li>
+                    <li><span class="item">Premium Photography</span><span class="cost">₹5,500</span></li>
+                    <li><span class="item">Personal Wedding Coordinator</span><span class="cost">₹5,000</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Business Event Section -->
+        <a href="business.html" class="event-button">
+        <div class="event-section">
+            <h2>Business Event</h2>
+            <p class="amount">Total Budget: ₹250,550</p>
+            <div class="budget-breakdown">
+                <p><strong>Budget Breakdown:</strong></p>
+                <ul>
+                    <li><span class="item">Corporate Event Planning</span><span class="cost">₹70,000</span></li>
+                    <li><span class="item">Venue Booking</span><span class="cost">₹60,000</span></li>
+                    <li><span class="item">Catering Services</span><span class="cost">₹40,000</span></li>
+                    <li><span class="item">Audio-Visual Equipment</span><span class="cost">₹30,000</span></li>
+                    <li><span class="item">Branding & Signage</span><span class="cost">₹25,000</span></li>
+                    <li><span class="item">Event Staffing</span><span class="cost">₹20,000</span></li>
+                    <li><span class="item">Post-Event Reporting</span><span class="cost">₹5,550</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Decision-Making Section -->
+        <div class="decision-section">
+            <h2>What Do You Need?</h2>
+            <div class="decision-box" onclick="alert('You selected Full Wedding Planning!');">
+                <h3>Full Wedding Planning</h3>
+                <p>Need help with complete planning for your event?</p>
+            </div>
+            <div class="decision-box" onclick="alert('You selected Customized Decor!');">
+                <h3>Customized Decor</h3>
+                <p>Looking for a unique decoration theme?</p>
+            </div>
+            <div class="decision-box" onclick="alert('You selected Catering Services!');">
+                <h3>Catering Services</h3>
+                <p>Require delicious food and drinks for your guests?</p>
+            </div>
+            <div class="decision-box" onclick="alert('You selected Entertainment Options!');">
+                <h3>Entertainment Options</h3>
+                <p>Interested in booking entertainment for your event?</p>
+            </div>
+            <div class="decision-box" onclick="alert('You selected Photography Services!');">
+                <h3>Photography Services</h3>
+                <p>Need professional photography for your event?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
